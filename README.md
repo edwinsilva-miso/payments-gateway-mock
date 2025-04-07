@@ -39,7 +39,7 @@ payment-gateway-mock/
 docker-compose up -d
 ```
 
-3. El mock estará disponible en http://localhost:8080
+3. El mock estará disponible en http://localhost:8000
 
 ### Sin Docker
 
@@ -55,7 +55,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-3. El mock estará disponible en http://localhost:8080
+3. El mock estará disponible en http://localhost:8000
 
 ## Autenticación
 
