@@ -7,8 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app.py .
 
-# Puerto en el que se ejecutará nuestra API
-EXPOSE 8000
+EXPOSE 5000
 
-# Ejecutar con gunicorn para entornos de producción
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
