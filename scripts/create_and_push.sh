@@ -12,7 +12,7 @@ echo "[INFO]: configuring docker"
 gcloud auth configure-docker "${REGION}-docker.pkg.dev"
 
 echo "[INFO]: building image"
-docker build -t "${IMAGE_NAME}:${TAG}" .
+docker build --no-cache -t "${IMAGE_NAME}:${TAG}" .
 
 echo "[INFO]: tagging image"
 docker tag "${IMAGE_NAME}:${TAG}" "${IMAGE_PATH}"
